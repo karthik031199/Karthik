@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Third sem cgpa </title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+</style>
+</head>
+<body background="b.jpg">
+<form>
+<h2 align="center">THIRD SEMESTER CGPA </h2><br>
+<table align="center">
+<tr><td>40CS003(DS) </td><td><select id="op1"><option>Select Ur Grade</option><option value='30'>O</option><option value='27'>A+</option><option value='24'>A</option>
+<option value='21'>B+</option><option value='18'>B</option><option value='15'>C</option><option value='0'>RA</option></select></td></tr>
+<tr><td>40CS004(OOPS) </td><td><select id="op2"><option>Select Ur Grade</option><option value='30'>O</option><option value='27'>A+</option><option value='24'>A</option>
+<option value='21'>B+</option><option value='18'>B</option><option value='15'>C</option><option value='0'>RA</option></select></td></tr>
+<tr><td>40CS0P3(DS LAB)  </td><td><select id="op3" ><option>Select Ur Grade</option><option value='20'>O</option><option value='18'>A+</option><option value='16'>A</option>
+<option value='14'>B+</option><option value='12'>B</option><option value='10'>C</option><option value='0'>RA</option></select></td></tr>
+<tr><td>40CS0P4(OOPS LAB) </td><td><select id="op4" ><option>Select Ur Grade</option><option value='20'>O</option><option value='18'>A+</option><option value='16'>A</option>
+<option value='14'>B+</option><option value='12'>B</option><option value='10'>C</option><option value='0'>RA</option></select></td></tr>
+<tr><td>40CS301(SE)  </td><td><select id="op5"><option>Select Ur Grade</option><option value='30'>O</option><option value='27'>A+</option><option value='24'>A</option>
+<option value='21'>B+</option><option value='18'>B</option><option value='15'>C</option><option value='0'>RA</option></select></td></tr>
+<tr><td>40EC003(DPSD) </td><td><select id="op6" ><option>Select Ur Grade</option><option value='40'>O</option><option value='36'>A+</option><option value='32'>A</option>
+<option value='28'>B+</option><option value='24'>B</option><option value='20'>C</option><option value='0'>RA</option></select></td></tr>
+<tr><td>40EC004(EDC) </td><td><select id="op7"><option>Select Ur Grade</option><option value='30'>O</option><option value='27'>A+</option><option value='24'>A</option>
+<option value='21'>B+</option><option value='18'>B</option><option value='15'>C</option><option value='0'>RA</option></select></td></tr>
+<tr><td>40EC0P1(ADC LAB)   </td><td><select id="op8" ><option>Select Ur Grade</option><option value='20'>O</option><option value='18'>A+</option><option value='16'>A</option>
+<option value='14'>B+</option><option value='12'>B</option><option value='10'>C</option><option value='0'>RA</option></select></td></tr>
+<tr><td>40MA004(BVPTM) </td><td><select id="op9" ><option>Select Ur Grade</option><option value='40'>O</option><option value='36'>A+</option><option value='32'>A</option>
+<option value='28'>B+</option><option value='24'>B</option><option value='20'>C</option><option value='0'>RA</option></select></td></tr>
+</table>
+</form>
+<center><button onclick="fun()">GET CGPA</button><h3><br>Your's CGPA : <span id="hell"></span></h3></center><br>
+
+<script>
+function fun()
+{
+    var a1=Number(document.getElementById("op1").value);
+    var a2=Number(document.getElementById("op2").value);
+    var a3=Number(document.getElementById("op3").value);
+    var a4=Number(document.getElementById("op4").value);
+    var a5=Number(document.getElementById("op5").value);
+    var a6=Number(document.getElementById("op6").value);
+    var a7=Number(document.getElementById("op7").value);
+    var a8=Number(document.getElementById("op8").value);
+    var a9=Number(document.getElementById("op9").value);
+    var tot=a1+a2+a3+a4+a5+a6+a7+a8+a9;
+    var cgpa=tot/26;
+    document.getElementById("hell").innerHTML=cgpa.toFixed(2);
+
+}
+</script>
+</body>
+</html>
