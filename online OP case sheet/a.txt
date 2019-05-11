@@ -1,0 +1,32 @@
+<table align="center">
+<h2 align="center">General Examination</h2>
+<?php echo "<tr>";?>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Causes</th>
+        <th>Prescription</th>
+        <th>Name of Doctor</th>
+     <?php echo "</tr>";?> 
+    <?php echo "<tr>";?>
+    <td> </td>
+    
+        <td>  </td>
+        <td>  </td>
+        <td> </td>
+        <td>  </td>
+        <?php echo "</tr>";?> 
+        <?php echo "<tr>";?>
+    <td>  </td>
+        <td>  </td>
+        <td>  </td>
+        <td>  </td>
+        <td> </td>
+        <?php echo "</tr>";?> 
+        <?php echo "<tr>";?>
+    <td>  </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <?php echo "</tr>";?> 
+        </table><br>
