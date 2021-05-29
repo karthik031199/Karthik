@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>8th sem sgpa and cgpa </title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+</style>
+</head>
+<body background="b.jpg">
+<form>
+<h2 align="center"> EIGHTH SEMESTER SGPA </h2><br>
+<table align="center">
+<tr><td>40CS701(MC)  </td><td><select id="op1"><option>Select Ur Grade</option><option value='30'>O</option><option value='27'>A+</option><option value='24'>A</option>
+<option value='21'>B+</option><option value='18'>B</option><option value='15'>C</option><option value='0'>RA</option></select></td></tr>
+<tr><td>40CS8P1(PW_LAB_2) </td><td><select id="op2"><option>Select Ur Grade</option><option value='80'>O</option><option value='72'>A+</option><option value='64'>A</option>
+<option value='56'>B+</option><option value='48'>B</option><option value='40'>C</option><option value='0'>RA</option></select></td></tr>
+
+</table>
+</form>
+<center><button onclick="fun()">GET SGPA</button><h3><br>Your's SGPA : <span id="hell"></span></h3></center><br>
+<form>
+    <table align="center">
+    <h2 align="center">CGPA</h2><br>
+    <tr><td>CGPA(UPTO 7TH SEM)</td><td><input type="text" value="" id="it"></td></tr>
+    </table>
+    </form>
+    <center><button onclick="fun1()">GET CGPA</button><h3><br>Your's CGPA : <span id="hel"></span></h3></center>
+<script>
+function fun()
+{
+    var a1=Number(document.getElementById("op1").value);
+    var a2=Number(document.getElementById("op2").value);
+    var tot=a1+a2;
+    var cgpa=tot/11;
+    document.getElementById("hell").innerHTML=cgpa.toFixed(2);
+
+}
+function fun1()
+{
+    var a1=Number(document.getElementById("op1").value);
+    var a2=Number(document.getElementById("op2").value);
+    var tot=a1+a2;
+    var cgpa=tot/11;
+    var s1=Number(document.getElementById("it").value);
+    var sg=cgpa+(s1*7);
+    var sgpa=sg/8;
+    document.getElementById("hel").innerHTML=sgpa.toFixed(2);
+}
+</script>
+</body>
+</html>
